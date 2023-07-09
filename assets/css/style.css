@@ -1804,37 +1804,37 @@ hr {
   }
 }
 .section-padd4 {
-  padding-top: 200px;
-  padding-bottom: 110px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .section-padd4 {
-    padding-top: 200px;
-    padding-bottom: 110px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .section-padd4 {
-    padding-top: 100px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .section-padd4 {
-    padding-top: 70px;
-    padding-bottom: 15px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .section-padd4 {
-    padding-top: 70px;
-    padding-bottom: 15px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 @media (max-width: 767px) {
   .section-padd4 {
-    padding-top: 70px;
-    padding-bottom: 15px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 .testimonial-padding {
@@ -4677,6 +4677,12 @@ del {
   .slider-area .hero__img img {
     right: 0px;
   }
+
+@media only screen and (max-width: 992px) {
+  .slider-area .hero__img img {
+    right: 0px;
+  }
+}
 }
 z .slider-area .hero-cap h2 {
   color: #fff;
