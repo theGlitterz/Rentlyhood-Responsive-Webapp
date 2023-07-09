@@ -377,13 +377,13 @@ hr {
   background: #ec4683;
 }
 .card-btn1 {
-  background: #712fda;
+  background: #FEB845;
   border-radius: 6px;
   padding: 30px 40px;
   text-transform: uppercase;
 }
 .card-btn1::before {
-  background: #ff374b;
+  background: #f79e05;
 }
 .btn.focus,
 .btn:focus {
@@ -1640,37 +1640,37 @@ hr {
   }
 }
 .section-padding2 {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .section-padding2 {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .section-padding2 {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .section-padding2 {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .section-padding2 {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 @media (max-width: 767px) {
   .section-padding2 {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 .inner-padding {
@@ -1804,13 +1804,13 @@ hr {
   }
 }
 .section-padd4 {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .section-padd4 {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -5132,7 +5132,7 @@ z .slider-area .hero-cap h2 {
   font-size: 16px;
 }
 .pricing-card-area .single-card .card-bottom ul li {
-  color: #717081;
+  color: #060606;
   font-weight: 300;
   margin-bottom: 16px;
   font-size: 16px;

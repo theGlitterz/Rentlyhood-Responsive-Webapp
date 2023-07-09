@@ -818,27 +818,27 @@ hr {
 		}
 	}
 		.section-padd4{
-		padding-top: 200px;
-		padding-bottom: 110px;
+		padding-top: 50px;
+		padding-bottom: 50px;
 		@media #{$laptop}{
-			padding-top: 200px;
-			padding-bottom: 110px;
+			padding-top: 50px;
+			padding-bottom: 50px;
 		}
 		@media #{$lg}{
-			padding-top: 100px;
-			padding-bottom: 30px;
+			padding-top: 50px;
+			padding-bottom: 50px;
 		}
 		@media #{$md}{
-			padding-top: 70px;
-			padding-bottom: 15px;
+			padding-top: 40px;
+			padding-bottom: 40px;
 		}
 		@media #{$sm}{
-			padding-top: 70px;
-			padding-bottom: 15px;
+			padding-top: 40px;
+			padding-bottom: 40px;
 		}
 		@media #{$xs}{
-			padding-top: 70px;
-			padding-bottom: 15px;
+			padding-top: 40px;
+			padding-bottom: 40px;
 		}
 	}
 	
