@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>App Landing Template </title>
+        <title>Rentlyhood</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="manifest" href="site.webmanifest">
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo.png">
 
 		<!-- CSS here -->
             <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -46,7 +46,7 @@
                     <div class="row align-items-center">
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2 col-md-2">
-                            <div class="logo">
+                            <div class="logo p-2">
                                 <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
                             </div>
                         </div>
@@ -55,18 +55,18 @@
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">    
-                                        <li class="active"><a href="index.html"> Home</a></li>
-                                        <li><a href="feature.html">Feature</a></li>
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="pricing.html">Pricing</a></li>
+                                        <li class="active"><a href="#"> Home</a></li>
+                                        <li><a href="#">Feature</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Pricing</a></li>
                                         <li><a href="#">Pages</a>
                                             <ul class="submenu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="single-blog.html">Blog Details</a></li>
-                                                <li><a href="elements.html">Element</a></li>
+                                                <li><a href="#">Blog</a></li>
+                                                <li><a href="#">Blog Details</a></li>
+                                                <li><a href="#">Element</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="#">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -99,10 +99,8 @@
                                     <!-- Slider btn -->
                                    <div class="slider-btns">
                                         <!-- Hero-btn -->
-                                        <a data-animation="fadeInLeft" data-delay="1.0s" href="industries.html" class="btn radius-btn">Download</a>
-                                        <!-- Video Btn -->
-                                        <a data-animation="fadeInRight" data-delay="1.0s" class="popup-video video-btn ani-btn" href="https://www.youtube.com/watch?v=1aP-TXUpNoU"><i class="fas fa-play"></i></a>
-                                   </div>
+                                        <a data-animation="fadeInLeft" data-delay="1.0s" onclick="downloadButtonFunction()" class="btn radius-btn">Download</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -210,16 +208,16 @@
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="services-caption active text-center mb-30">
+                        <div class="services-caption text-center mb-30">
                             <div class="service-icon">
-                                <span class="flaticon-pay"></span>
+                                <span class="flaticon-businessman"></span>
                             </div> 
                             <div class="service-cap">
-                                <h2><a href="#">LEND</a></h2>
+                                <h2><a href="#">Lend</a></h2>
                                 <h5>Your extra items,<br>Help others,<br>Earn some cash</h5>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="services-caption text-center mb-30">
                             <div class="service-icon">
@@ -291,17 +289,17 @@
                     <div class="col-xl-6 col-lg-6 col-md-6">
                         <div class="single-card text-center mb-30">
                             <div class="card-top">
-                                <h4>How to rent?</h4>
+                                <h4>How to Rent?</h4>
                                 <img src="assets/img/shape/Photo Sharing-bro.png" style="max-width: 100%;">
                             </div>
                             <div class="card-bottom text-left">
-                                <ul>
+                                <ul class="mx-3">
                                     <li>Download the Rentlyhood app and sign up</li>
                                     <li>Search for the required item</li>
                                     <li>Choose dates and submit the booking request</li>
                                     <li>Make payment once lender approves booking request</li>
                                 </ul>
-                                <a href="services.html" class="btn card-btn1">Get Started</a>
+                                <a href="https://www.instagram.com/reel/Cs4EHYDo_5w/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank" class="btn card-btn1">Get Started</a>
                             </div>
                         </div>
                     </div>
@@ -312,14 +310,14 @@
                                 <img src="assets/img/shape/App monetization-pana.png" style="max-width: 100%;">
                             </div>
                             <div class="card-bottom text-left">
-                                <ul>
+                                <ul class="mx-3">
                                     <li>Download the Rentlyhood app and sign up</li>
                                     <li>Switch to Lender profile and click 'Create New Listing'</li>
                                     <li>Enter details of item and upload photos</li>
                                     <li>Submit for Approval</li>
                              
                                 </ul>
-                                <a href="services.html" class="btn card-btn1">Get Started</a>
+                                <a href="https://www.instagram.com/reel/CtbsjNnI9lg/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank" class="btn card-btn1">Get Started</a>
                             </div>
                         </div>
                     </div>
@@ -327,11 +325,12 @@
             </div>
         </div>
         <!-- Pricing Card End -->
+
+
         <!-- Our Customer Start -->
-        <div class="our-customer section-padd-top30">
+        <!-- <div class="our-customer section-padd-top30">
             <div class="container-fluid">
             <div class="our-customer-wrapper">
-                    <!-- Section Tittle -->
                     <div class="row d-flex justify-content-center">
                         <div class="col-xl-8">
                             <div class="section-tittle text-center">
@@ -387,10 +386,12 @@
                     </div>
             </div>
             </div>
-        </div>           
+        </div>            -->
         <!-- Our Customer End -->
+
+
         <!-- Available App  Start-->
-        <div class="available-app-area">
+        <div class="available-app-area" id="download">
             <div class="container">
                 <div class="row d-flex justify-content-between">
                     <div class="col-xl-5 col-lg-6">
@@ -399,8 +400,8 @@
                                 <h2>Download Our App and Start Renting Now</h2>
                                 <p>Ready to unlock the full potential of Rentlyhood? Download our app now and experience a seamless and empowering renting journey at your fingertips</p>
                                 <div class="app-btn">
-                                    <a href="#" class="app-btn1"><img src="assets/img/shape/app_btn1.png" alt=""></a>
-                                    <a href="#" class="app-btn2"><img src="assets/img/shape/app_btn2.png" alt=""></a>
+                                    <a href="https://apps.apple.com/ie/app/rentlyhood/id6447560745" class="app-btn1"><img src="assets/img/shape/app_btn1.png" alt=""></a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.rentlyhood.android&gl=IE" class="app-btn2"><img src="assets/img/shape/app_btn2.png" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -420,8 +421,10 @@
             </div>
         </div>
         <!-- Available App End-->
+
+
         <!-- Say Something Start -->
-        <div class="say-something-aera pt-90 pb-90 fix">
+        <!-- <div class="say-something-aera pt-90 pb-90 fix">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
                     <div class="offset-xl-1 offset-lg-1 col-xl-5 col-lg-5">
@@ -436,12 +439,12 @@
                     </div>
                 </div>
             </div>
-            <!-- shape -->
+
             <div class="say-shape">
                 <img src="assets/img/shape/say-shape-left.png" alt="" class="say-shape1 rotateme d-none d-xl-block">
                 <img src="assets/img/shape/say-shape-right.png" alt="" class="say-shape2 d-none d-lg-block">
             </div>
-        </div>
+        </div> -->
         <!-- Say Something End -->
      
     </main>

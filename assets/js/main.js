@@ -302,3 +302,16 @@
 
 
 })(jQuery);
+
+
+function downloadButtonFunction() {
+  if (navigator.userAgent.toLowerCase().indexOf("iphone") > -1) {
+    window.location.href = "https://apps.apple.com/ie/app/rentlyhood/id6447560745";
+  } else if (navigator.userAgent.toLowerCase().indexOf("android") > -1) {
+    window.location.href = "https://play.google.com/store/apps/details?id=com.rentlyhood.android&gl=IE"
+  } else if (navigator.userAgent.toLowerCase().indexOf("ipad") > -1) {
+    window.location.href = "https://apps.apple.com/ie/app/rentlyhood/id6447560745"
+  } else {
+    window.location.href = "#download"
+  }
+}
