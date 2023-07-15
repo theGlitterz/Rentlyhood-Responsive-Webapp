@@ -4657,6 +4657,28 @@ del {
   -webkit-animation: 1.3s cubic-bezier(217, 70, 233, 1) 0s normal none infinite
     running pulse;
 }
+a.rent-lend-play-btn {
+  height: 60px;
+  display: inline-block;
+  text-align: center;
+  line-height: 60px;
+  position: relative;
+  margin-left: 16px;
+  background: #FEB845;
+  border-radius: 6px;
+  padding: 0px 40px;
+  text-transform: uppercase;
+}
+a.rent-lend-play-btn::before {
+  background: #f79e05;
+}
+/* a.rent-lend-play-btn:hover.ani-btn {
+  animation: 1.3s cubic-bezier(0.8, 0, 0, 1) 0s normal none infinite running
+    pulse;
+  box-shadow: 0 0 0 0 rgba(61, 1, 68, 0.302);
+  -webkit-animation: 1.3s cubic-bezier(217, 70, 233, 1) 0s normal none infinite
+    running pulse;
+} */
 @-webkit-keyframes pulse {
   to {
     box-shadow: 0 0 0 45px rgba(83, 16, 90, 0);
