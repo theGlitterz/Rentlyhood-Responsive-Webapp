@@ -21,6 +21,13 @@
       });
     };
 
+    $(document).on("click", function (event) {
+      if (!$(event.target).closest("#navigation, .mobile_menu").length) {
+        // Clicked outside of the navigation or mobile menu
+        menu.slicknav('close'); // Close the slicknav menu
+      }
+    });
+
 
 /* 3. MainSlider-1 */
     function mainSlider() {
