@@ -12,21 +12,30 @@
 
 /* 2. slick Nav */
 // mobile_menu
-    var menu = $('ul#navigation');
-    if(menu.length){
-      menu.slicknav({
-        prependTo: ".mobile_menu",
-        closedSymbol: '+',
-        openedSymbol:'-'
-      });
-    };
+$(document).ready(function () {
+  var menu = $('ul#navigation');
 
-    $(document).on("click", function (event) {
-      if (!$(event.target).closest("#navigation, .mobile_menu").length) {
-        // Clicked outside of the navigation or mobile menu
-        menu.slicknav('close'); // Close the slicknav menu
-      }
+  // Initialize the slicknav plugin
+  if (menu.length) {
+    menu.slicknav({
+      prependTo: ".mobile_menu",
+      closedSymbol: '+',
+      openedSymbol: '-'
     });
+  }
+
+  // Close the navigation bar when clicking outside of it or on a menu item
+  $(document).on("click", function (event) {
+    var target = $(event.target);
+
+    if (
+      !target.closest("#navigation").length && // Clicked outside of the navigation menu
+      !target.closest(".slicknav_btn").length // Clicked on the menu toggle button
+    ) {
+      menu.slicknav('close');
+    }
+  });
+});
 
 
 /* 3. MainSlider-1 */
