@@ -34,6 +34,18 @@
   gtag('js', new Date());
 
   gtag('config', 'G-956X6DD5B1');
+
+  function trackExternalLinkClick(url) {
+      gtag('event', 'click', {
+        event_category: 'External Link',
+        event_label: url,
+        transport_type: 'beacon',
+        event_callback: function() {
+          document.location = url;
+        }
+      });
+    }
+
 </script>
 
    </head>
@@ -339,7 +351,7 @@
                                     <li>Make payment once lender approves booking request</li>
                                 </ul>
                             </div>
-                        <a data-animation="fadeInRight" data-delay="1.0s" class="popup-video btn rent-lend-play-btn ani-btn" href="https://www.instagram.com/reel/Cs4EHYDo_5w/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank"><i class="fas fa-play"></i> &ensp; Watch Tutorial</a>
+                        <a data-animation="fadeInRight" data-delay="1.0s" class="popup-video btn rent-lend-play-btn ani-btn" href="https://www.instagram.com/reel/Cs4EHYDo_5w/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" onclick="trackExternalLinkClick('https://www.instagram.com/reel/Cs4EHYDo_5w/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=='); return false;" target="_blank"><i class="fas fa-play"></i> &ensp; Watch Tutorial</a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6">
@@ -356,7 +368,7 @@
                              
                                 </ul>
                             </div>
-                            <a href="https://www.instagram.com/reel/CtbsjNnI9lg/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank" class="popup-video btn rent-lend-play-btn ani-btn"><i class="fas fa-play"></i> &ensp; Watch Tutorial</a>
+                            <a href="https://www.instagram.com/reel/CtbsjNnI9lg/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" onclick="trackExternalLinkClick('https://www.instagram.com/reel/CtbsjNnI9lg/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=='); return false;" target="_blank" class="popup-video btn rent-lend-play-btn ani-btn"><i class="fas fa-play"></i> &ensp; Watch Tutorial</a>
                         </div>
                     </div>
                 </div>
@@ -374,8 +386,8 @@
                                 <h2>Download Our App and Start Renting Now</h2>
                                 <p>Ready to unlock the full potential of Rentlyhood? Download our app now and experience a seamless and empowering renting journey at your fingertips</p>
                                 <div class="app-btn">
-                                    <a href="https://apps.apple.com/ie/app/rentlyhood/id6447560745" class="app-btn1"><img src="assets/img/shape/app_btn1.png" alt=""></a>
-                                    <a href="https://play.google.com/store/apps/details?id=com.rentlyhood.android&gl=IE" class="app-btn2"><img src="assets/img/shape/app_btn2.png" alt=""></a>
+                                    <a href="https://apps.apple.com/ie/app/rentlyhood/id6447560745" class="app-btn1"><img src="assets/img/shape/app_btn1.png" alt="" onclick="trackExternalLinkClick('https://apps.apple.com/ie/app/rentlyhood/id6447560745');" style="cursor: pointer;"></a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.rentlyhood.android&gl=IE" class="app-btn2"><img src="assets/img/shape/app_btn2.png" alt=""onclick="trackExternalLinkClick('https://play.google.com/store/apps/details?id=com.rentlyhood.android&gl=IE');" style="cursor: pointer;"></a>
                                 </div>
                             </div>
                         </div>
@@ -422,10 +434,10 @@
                             <div class="footer-tittle">
                                 <h4>Socials</h4>
                                 <ul>
-                                    <li> <img src="assets/img/logo/instagram.ico" width="20" height="20">&nbsp;&nbsp;<a href="https://www.instagram.com/rentlyhood/">Instagram</a></li>
-                                    <li><img src="assets/img/logo/tiktok.png" width="20" height="20">&nbsp;&nbsp;<a href="https://www.tiktok.com/@rentlyhood">TikTok</a></li>
-                                    <li><img src="assets/img/logo/apple.png" width="20" height="20">&nbsp;&nbsp;<a href="https://apps.apple.com/ie/app/rentlyhood/id6447560745">Apple App Store</a></li>
-                                    <li><img src="assets/img/logo/google-play-store.png" width="20" height="20">&nbsp;&nbsp;<a href="https://play.google.com/store/apps/details?id=com.rentlyhood.android&gl=IE">Google Play Store</a></li>
+                                    <li> <img src="assets/img/logo/instagram.ico" width="20" height="20">&nbsp;&nbsp;<a href="https://www.instagram.com/rentlyhood/" onclick="trackExternalLinkClick('https://www.instagram.com/rentlyhood/'); return false;">Instagram</a></li>
+                                    <li><img src="assets/img/logo/tiktok.png" width="20" height="20">&nbsp;&nbsp;<a href="https://www.tiktok.com/@rentlyhood" onclick="trackExternalLinkClick('https://www.tiktok.com/@rentlyhood'); return false;">TikTok</a></li>
+                                    <li><img src="assets/img/logo/apple.png" width="20" height="20">&nbsp;&nbsp;<a href="https://apps.apple.com/ie/app/rentlyhood/id6447560745" onclick="trackExternalLinkClick('https://apps.apple.com/ie/app/rentlyhood/id6447560745'); return false;">Apple App Store</a></li>
+                                    <li><img src="assets/img/logo/google-play-store.png" width="20" height="20">&nbsp;&nbsp;<a href="https://play.google.com/store/apps/details?id=com.rentlyhood.android&gl=IE" onclick="trackExternalLinkClick('https://play.google.com/store/apps/details?id=com.rentlyhood.android&gl=IE'); return false;">Google Play Store</a></li>
                               
                                 </ul>
                             </div>
